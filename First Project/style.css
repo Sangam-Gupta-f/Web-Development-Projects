@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    
+}
+.intro{
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+}
+.mypic{
+    width: 50%;
+}
+.first{
+    display: flex;
+    justify-content: center;
+  }
+  .about{
+    
+        color: white;
+        text-align: center;
+    
+  }
+  .about us{
+    
+    align-self: center;
+  }
+  .skills{
+    display: flex;
+    width: 55%;
+    background-color: lightslategrey;
+    justify-self: center;
+  }
+  .line1{
+    width: 50%;
+    
+  }
+  .line2{
+    width: 50%;
+   
+  }
+  .second{
+    display: grid;
+  }
+.details {
+    text-align: end;
+    margin-right: 10;
+    color: white;
+}
+.skillsdetail{
+    margin-left: 10;
+    color: white;
+}
