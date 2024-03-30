@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    
+    margin: bottom 0;
 }
 .intro{
     color: white;
@@ -50,4 +50,29 @@ body{
 .skillsdetail{
     margin-left: 10;
     color: white;
+}
+.part3{
+    display: flex;
+    width: 80%;
+    justify-self: center;
+}
+.imgbox{
+    width: 33.33%;
+}
+.portfolio{
+    color: white;
+    text-align: center;
+}
+.flex{
+    display: grid;
+    
+}
+.footer{
+    color: white;
+    text-align: center;
+    background-color: lightslategray;
+}
+.footerimg{
+  height: 150;
+  width: 150;
 }
