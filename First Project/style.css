@@ -14,6 +14,7 @@ body{
 .first{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .about{
     
@@ -28,19 +29,30 @@ body{
   .skills{
     display: flex;
     width: 55%;
+    height: 400px;
     background-color: lightslategrey;
     justify-self: center;
+    flex-wrap: wrap;
   }
   .line1{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+
     
   }
   .line2{
     width: 50%;
-   
+   display: flex;
+    flex-direction: column;
   }
   .second{
     display: grid;
+  }
+  .img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
   }
 .details {
     text-align: end;
@@ -54,14 +66,24 @@ body{
 .part3{
     display: flex;
     width: 80%;
+    border: 2px;
     justify-self: center;
+    align-items: center;
+    border-color: white;
+    flex-wrap: wrap;
 }
-.imgbox{
+.imgbox {
     width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+   
 }
 .portfolio{
     color: white;
     text-align: center;
+    padding: 10px;
 }
 .flex{
     display: grid;
@@ -75,4 +97,8 @@ body{
 .footerimg{
   height: 150;
   width: 150;
+  align-self: center;
+}
+.footerimg:hover{
+  transform: scale(1.5);
 }
