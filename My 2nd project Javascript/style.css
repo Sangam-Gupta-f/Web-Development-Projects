@@ -1,0 +1,19 @@
+body{
+    background-color: lightpink;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+}
+.button{
+    margin: 10px;
+    border-radius: 15px;
+
+
+}
+.img{
+    margin: 20px;
+    padding: auto;
+    border-radius: 50%;
+    border-color: blue;
+}

@@ -1,0 +1,1 @@
+document.getElementsByClassName("button").innerHTML = "Hello JavaScript";
