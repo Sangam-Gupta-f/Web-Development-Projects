@@ -2,27 +2,33 @@
     <head>
         <title>Fun Game</title>
         <link rel="stylesheet" href="style.css">
-        <script src="index.js"></script>
+       
 
     </head>
     <body>
         <h1>Fun Game</h1>
 
         <div class="first">
-            <img class="img" id="stone" src="icons8-stone-48.png" alt="stone">
-            <img id="paper" class="img" src="icons8-paper-64.png" alt="paper">
-            <img id="scissor" class="img" src="icons8-barber-scissors-60.png" alt="scissor">
+            <img  class="img" id="stoneclick" src="icons8-stone-48.png" alt="stone">
+            <img  id="paperclick" class="img" src="icons8-paper-64.png" alt="paper">
+            <img  id="scissorclick" class="img" src="icons8-barber-scissors-60.png" alt="scissor">
         </div>
 
         <div class="second">
-            <button class="button" >Total Win</button>
-            <button class="button" >Total Loss</button>
+           <div> <h1 class="button" id="you" >0</h1>
+                 <h1>You Score</h1>
+           </div>
+           <div>
+                 <h1 class="button" id="comp" >0</h1>
+                <h1>Computer Score</h1>
+           </div>
         </div>
         
         <div class="third">
-             <button class="button" >Result</button>
+             <button class="result" >Result</button>
         </div>
        
+        <script src="index.js"></script>
 
     </body>
 </html>
