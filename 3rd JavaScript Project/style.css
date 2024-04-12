@@ -1,0 +1,19 @@
+
+body{
+    background-color: aliceblue;
+}
+#div1, #div2, #div3, #div4, #div5,#div6,#div7,#div8,#div9{
+    width: 200px;
+    height: 200px;
+    border:solid;
+    border-color: black;
+   
+}
+.div{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn{
+    justify-content: center;
+}
