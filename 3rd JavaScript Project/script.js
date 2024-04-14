@@ -8,37 +8,43 @@ const div6 = document.querySelector("#div6");
 const div7 = document.querySelector("#div7");
 const div8 = document.querySelector("#div8");
 const div9= document.querySelector("#div9");
-const btn =document.querySelector(".btn")
-
+const btn =document.getElementsByClassName("btn");
 let count = 0;
+console.log("Run");
+function Check(){
+  if(count>=5){
+    if((div1.innerHTML && div2.innerHTML && div3.innerHTML=="<h1>X</h1>") || (div4.innerHTML && div5.innerHTML && div6.innerHTML=="<h1>X</h1>") || (div7.innerHTML && div8.innerHTML && div9.innerHTML=="<h1>X</h1>") ||(div1.innerHTML && div5.innerHTML && div9.innerHTML=="<h1>X</h1>") || (div3.innerHTML && div5.innerHTML && div7.innerHTML=="<h1>X</h1>"))
+    {
+      btn.innerHTML="<h1>Player X won</h1>"
+    }
+  
+    if((div1.innerHTML && div2.innerHTML && div3.innerHTML=="<h1>O</h1>") || (div4.innerHTML && div5.innerHTML && div6.innerHTML=="<h1>O</h1>") || (div7.innerHTML && div8.innerHTML && div9.innerHTML=="<h1>X</h1>") ||(div1.innerHTML && div5.innerHTML && div9.innerHTML=="<h1></h1>") || (div3.innerHTML && div5.innerHTML && div7.innerHTML=="<h1>O</h1>"))
+    {
+      btn.innerHTML="<h1>Player O won</h1>"
+    }
+  }
+};
+
+$(document).ready(function(){
+
+$(".div").css("background-color","blue");
+});
+
 div1.addEventListener("click", mylogic1);
 div2.addEventListener("click", mylogic2);
 div3.addEventListener("click", mylogic3);
 div4.addEventListener("click", mylogic4);
 div5.addEventListener("click", mylogic5);
 div6.addEventListener("click", mylogic6);
-div7.addEventListener("click",mylogic7);
+div7.addEventListener("click", mylogic7);
 div8.addEventListener("click", mylogic8);
 div9.addEventListener("click", mylogic9);
 
 
 // Check winning of theam X
 
-if(count>=5){
-    if((div1.innerHTML && div2.innerHTML && div3.innerHTML==X) || (div4.innerHTML && div5.innerHTML && div6.innerHTML==X) || (div7.innerHTML && div8.innerHTML && div9.innerHTML==X</h1>) ||(div1.innerHTML && div5.innerHTML && div9.innerHTML==<h1>X</h1>) || (div3.innerHTML && div5.innerHTML && div7.innerHTML==<h1>X</h1>))
-    {
-      btn.innerHTML=<h1>Player X won</h1>
-    }
-
-    if((div1.innerHTML && div2.innerHTML && div3.innerHTML==<h1>O</h1>) || (div4.innerHTML && div5.innerHTML && div6.innerHTML==<h1>O</h1>) || (div7.innerHTML && div8.innerHTML && div9.innerHTML==<h1>O</h1>) ||(div1.innerHTML && div5.innerHTML && div9.innerHTML==<h1>O</h1>) || (div3.innerHTML && div5.innerHTML && div7.innerHTML==<h1>O</h1>))
-    {
-      btn.innerHTML=<h1>Player O won</h1>
-    }
-}
-
-
 function mylogic1() {
-
+Check();
 console.log("Clicked");
 
 count++;
@@ -50,7 +56,7 @@ else
 div1.innerHTML="<h1>X</h1>"
 };
 function mylogic2() {
-
+  Check();
     console.log("Clicked");
     
     count++;
@@ -62,7 +68,7 @@ function mylogic2() {
     div2.innerHTML="<h1>X</h1>"
 };
 function mylogic3() {
-
+  Check();
         console.log("Clicked");
         
         count++;
@@ -75,7 +81,7 @@ function mylogic3() {
 };
 
         function mylogic4() {
-
+          Check();
             console.log("Clicked");
             
             count++;
@@ -87,7 +93,7 @@ function mylogic3() {
             div4.innerHTML="<h1>X</h1>"
  };
  function mylogic5() {
-
+  Check();
     console.log("Clicked");
     
     count++;
@@ -100,7 +106,7 @@ function mylogic3() {
 };
 
 function mylogic6() {
-
+  Check();
                 console.log("Clicked");
                 
                 count++;
@@ -113,7 +119,7 @@ function mylogic6() {
  };
 
                 function mylogic7() {
-
+                  Check();
                     console.log("Clicked");
                     
                     count++;
@@ -126,7 +132,7 @@ function mylogic6() {
  };
 
 function mylogic8() {
-
+  Check();
                         console.log("Clicked");
                         
                         count++;
@@ -139,7 +145,7 @@ function mylogic8() {
                         };
 
   function mylogic9() {
-
+    Check();
                             console.log("Clicked");
                             
                             count++;
